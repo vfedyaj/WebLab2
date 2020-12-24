@@ -1,13 +1,3 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "lr2";
-
-$conn = new mysqli($servername, $username, $password, $database);
-
-if (!$conn){
-    die('Error querying database.');
-}
-
-
+    session_start();
+    $mysqli = new mysqli("localhost", "root", "", "testdb") or die("Connection failed: " .$mysqli->error);

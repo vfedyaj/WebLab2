@@ -1,0 +1,49 @@
+  
+.vertical-align {
+    position: absolute;
+    top: 150px;
+}
+
+.picture-size {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    width: 600px;
+}
+.header{
+    height: 100px; 
+    margin: 50px;
+    margin-top: 10px;
+}
+ table.iksweb{
+     text-decoration: none;
+     border-collapse:collapse;
+     width:100%;
+     text-align:center;
+ }
+ table.iksweb th{
+     font-weight:normal;
+     font-size:21px; 
+     color:#ffffff;
+     background-color:#4a4a4a;
+     }
+ table.iksweb td{
+     font-size:18px;
+     color:#000000;
+     }
+ table.iksweb td,table.iksweb th{
+     white-space:pre-wrap;
+     padding:27px 5px;
+     line-height:18px;
+     vertical-align: middle;
+     border: 1px solid #000000;
+     }	
+     table.iksweb tr:hover{
+         background-color:#f9fafb
+         }
+ table.iksweb tr:hover td{
+     color:#2a7539;
+     cursor:default;
+     }
