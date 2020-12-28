@@ -1,14 +1,19 @@
 <html>
     <head>
-        <link rel="stylesheet" href="assets/css/style.css">
+       
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+       
     </head>
 
     <body>
     <div class="header">
         <tr>
-            <th><img src="assets\img\logo.png" height="100" width="100"></th>
+            <th><a href="main.php"><img src="assets\img\log.png" height="100" width="100"></a></th>
     </nav>
+    
     <?php require "process.php"; ?>
         <div class="container-fluid vertical-align">
             <div class="row justify-content-center">
@@ -29,32 +34,34 @@
                                     <div class="input-group mb-3" style="top: 10px;">
                                         <div class="custom-file">
                                             <input type="file" name="photo" class="custom-file-input">
-                                            <label class="custom-file-label">Choose file</label>
+                                            <label class="custom-file-label">Choose</label>
                                         </div>
                                     </div>
                                 <?php endif; ?>
                             </div>
+    
                             <div class="col-md-auto">
+
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="first_name" placeholder="Change first name" value="<?php echo $first_name; ?>">
+                                    <input class="form-control" type="text" name="first_name" value="<?php echo $first_name; ?>">
                                 </div>
 
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="last_name" placeholder="Change last name" value="<?php echo $last_name; ?>">
+                                    <input class="form-control" type="text" name="last_name" value="<?php echo $last_name; ?>">
                                 </div>
 
                                 <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="Change role" value="<?php echo $role; ?>">
+                                    <input class="form-control" type="text" value="<?php echo $role; ?>">
                                 </div>
 
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="email" placeholder="New email" value="<?php echo $email; ?>">
+                                    <input class="form-control" type="text" name="email" value="<?php echo $email; ?>">
                                 </div>
 
                                 <?php if(isset($_SESSION['role'])): ?>
                                     <?php if(($_SESSION['role'] == 1) || (($_SESSION['role'] == 2) && ($_SESSION['username'] == $first_name))): ?>
                                         <div class="form-group">
-                                            <input class="form-control" type="password" name="password" placeholder="New password" value="<?php echo $password; ?>">
+                                            <input class="form-control" type="password" name="password" value="<?php echo $password; ?>">
                                         </div>
                                     <?php endif; ?>
                                 <?php endif; ?>
@@ -87,7 +94,9 @@
                 </div>
             </div>
         </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        
     </body>
 </html>

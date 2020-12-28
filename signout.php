@@ -2,7 +2,5 @@
     session_start();
     unset($_SESSION['username']);
     unset($_SESSION['role']);
-
-
-
-    header("Location: main.php");?>
+    header("Location: main.php");
+    ?>
